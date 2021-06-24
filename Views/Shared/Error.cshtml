@@ -1,0 +1,19 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+}
+
+<br />
+<h4>
+    Exception occurred in [@ViewContext.RouteData.Values["action"].ToString()] method of [@ViewContext.RouteData.Values["controller"].ToString()].
+
+    <br />
+
+    Exception Message:
+    @ViewBag.e.Message
+    <br />
+
+</h4>
+<br />
+<h6>@Html.ActionLink("Go Back To Home Page", "Index", "MenuItem")</h6>
